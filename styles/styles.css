@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+}
+body h1 {
+  color: #333333;
+  text-transform: uppercase;
+}
+body button {
+  background-color: #333333;
+}
+body input {
+  font-family: "Roboto", sans-serif;
+  color: #C7CBCF;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+}
+header nav a {
+  color: #C7CBCF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 10px;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #333333;
+}
+header nav i {
+  color: #333333;
+  font-size: 24px;
+  margin: 10px;
+}
+header nav i:hover {
+  cursor: pointer;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+main .header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .header-main .search-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #C7CBCF;
+}
+main .header-main .search-container:focus-within {
+  outline: auto;
+}
+main .header-main input[type=search] {
+  height: 40px;
+  padding: 15px;
+  border: none;
+  font-weight: 500;
+  color: #333333;
+  flex: 1;
+}
+main .header-main input[type=search]:focus {
+  outline: none;
+}
+main .header-main button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+main .header-main button i {
+  color: #fff;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "header header header" "aside main main" "footer footer footer";
+  grid-gap: 1rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh 100px;
+}
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
